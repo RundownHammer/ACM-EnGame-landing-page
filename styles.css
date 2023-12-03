@@ -1,0 +1,240 @@
+/*
+colors:
+  black-ish - 1A1A1D
+  bright blue : rgb(66, 148, 236)
+  red - rgb(255, 80, 0)
+ bright red : FB2576
+
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Play', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+
+  Exo 2
+  ExtraLight 200
+  ExtraLight 200 Italic
+  Medium 500
+  Bold 700 Italic
+
+*/
+
+@font-face {
+  font-family: 'pixeboyregular';
+  src: url('./Custom\ Fonts/pixeboy-z8xgd-webfont.woff2') format('woff2'),
+       url('./Custom\ Fonts/pixeboy-z8xgd-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body{
+  background-color: #1A1A1D;
+  color: whitesmoke;
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: 'Play', sans-serif;
+}
+
+.hero{
+  height: 56.25rem;
+  width: 120rem;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.heroTitle{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+h1{
+  font-family: 'Nova Square', sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+h1>span{
+  color: rgb(255, 80, 0);
+}
+
+h2{
+  font-family: pixeboyregular , sans-serif;
+  border-bottom:5px solid  rgb(255, 80, 0);
+
+}
+
+#heroBackgroundImg{
+  max-width: 131.25rem;
+}
+
+.p-3{
+  background-color: #1A1A1D;
+  font-family: 'Play', sans-serif;
+}
+
+.btn-warning{
+  background-color: hsl(239, 100%, 32%);
+  color: aliceblue;
+  border: #1A1A1D;
+}
+
+.btn-warning:hover{
+  background-color: #0002A1;
+}
+
+.head{
+  border-left: 5px solid rgb(255, 80, 0);
+  font-size: 3rem;
+  padding-left: 1rem;
+  width: fit-content;
+  margin: auto;
+}
+
+.CoreMembers>div{
+  margin: 5rem 10rem 3rem 10rem;
+  padding-bottom: 5rem;
+
+}
+
+.CoreMembers{
+  background: linear-gradient(#1A1A1D, #292930);}
+
+.cardStore{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.memberCard{
+  height: 480px;
+  min-height: max-content;
+  width: 23.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 5px solid rgb(148, 135, 140);
+  border-radius: 25px 70px;
+  box-shadow: rgb(66, 148, 236) 0px 20px 30px -10px;
+}
+
+.memberCard>img{
+  height: 50%;
+  border-radius: 25px 70px 0px 0px;
+
+}
+
+.memberCard > h2 , p {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#myCarousel{
+  height: 37.5rem;
+
+}
+
+#carouselExampleIndicators, #carouselExampleIndicators img {
+  height: 31.25rem;
+  width: 50rem;
+}
+
+#carouselMain{
+  margin: 50px 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.carousalHeading{
+  width: 800px;
+  margin-top: 140px;
+  
+}
+
+.carousalHeading > h2{
+  border: none;
+  margin-top: 30px;
+}
+
+.carousalHeading > h1{
+  margin-left: 0px;
+}
+
+.contactUs{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  width: 800px;
+  box-shadow: rgb(66, 148, 236, 0.2)0px 7px 29px 0px;;
+  margin-bottom: 30px;
+  border: 1px double #292930;
+  margin-bottom: 80px;
+}
+
+form{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 40px 40px 200px 50px;
+
+}
+
+input{
+  border-radius: 5px;
+  border: 1px solid white;
+  height: 30px;
+}
+
+label[for='name']{
+  grid-area: 1/1/1/1;
+  font-family: pixeboyregular , sans-serif;
+  font-size: 25px;
+}
+
+#name{
+  grid-area: 1/2/1/2;
+}
+
+label[for="password"]{
+  grid-area: 2/1/2/1;
+  font-family: pixeboyregular , sans-serif;
+  font-size: 25px;
+}
+
+#password{
+  grid-area: 2/2/2/2;
+}
+
+label[for="text"]{
+  grid-area: 3/2/3/1;
+  font-family: pixeboyregular , sans-serif;
+  font-size: 25px;
+}
+
+button[type="submit"]{
+  margin-top: 20px;
+  border-radius: 25px;
+  border: 2px solid white;
+}
+
+button[type="submit"]:hover{
+  color: white;
+  background-color: #292930;
+}
+
+.contactHead{
+  margin-bottom: 50px;
+}
+
+footer{
+  color: whitesmoke;
+}
+
+.nav-link{
+  color: whitesmoke;
+}
+
+.nav-link:hover{
+  color: rgb(7, 109, 218);
+}
